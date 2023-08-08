@@ -130,6 +130,8 @@ let myobarr = [
   
 /////// find
 
+console.log("--------------find----------------------")
+
 let findname =myobarr.find(function(x){
 return x.eye_color === "blue"
 })
@@ -142,7 +144,7 @@ let findMygender =myobarr.find(function(x){
     console.log(findname.name,findMygender.gender)
     
 
-console.log("-------------------------------------")
+console.log("--------------filter----------------------")
     
     ///FILTER
 
@@ -160,7 +162,7 @@ let filtermale = myobarr.filter(function(x){
 console.log(filtermale);
 
 
-console.log("-------------------------------------")
+console.log("--------------map-----------------------")
 
 //MAP
 let mapNames= myobarr.map(function(x){
@@ -175,14 +177,17 @@ let mapHights= myobarr.map(function(x){
 
 console.log(mapNames,mapHights);
 
-console.log("-------------------------------------")
+
 
 
 //SORT
+console.log("-----------------sort-----------------")
 
 let sortMass = myobarr.sort(function(b,a){
     return b.mass - a.mass;
 })
+
+console.log(sortMass);
 
 let sortHeight = myobarr.sort(function(a,b){
     return a.height - b.height;
@@ -192,9 +197,11 @@ console.log(sortHeight);
 
 
 
-console.log("-------------------------------------")
+
 
 //EVERY
+
+console.log("----------every---------------------------")
 
 let everyMass= myobarr.every(function(x){
 return x.mass > 40;
@@ -213,7 +220,7 @@ let everyh= myobarr.every(function(x){
 
     
 
-console.log("-------------------------------------")
+console.log("-------------------some------------------")
 
 //SOME
 
